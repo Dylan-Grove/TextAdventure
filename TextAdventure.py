@@ -50,6 +50,28 @@ def ps(str, x = 0.03, y = 1):
         else:
             pass
     printspace()
+
+
+    #---Sarcastic/suspenseful typing---#
+def pvss(str):                                                                              #(Print Very Slow Setup) Used before PVS/pms because it doesn't end with an empty line like PS
+    for letter in str:
+        sys.stdout.write(letter)
+        sys.stdout.flush()
+        time.sleep(.03)
+
+def pvs(str):                                                                               #(Print Very Slow) types 10x slower than PS.
+    for letter in str:
+        sys.stdout.write(letter)
+        sys.stdout.flush()
+        time.sleep(.3)
+
+def pms(str):                                                                               #(Print Midly Slow) Types 3x slower than PS
+    for letter in str:
+        sys.stdout.write(letter)
+        sys.stdout.flush()
+        time.sleep(.1)
+
+        
 #------------------------------------------------------------
 # Page Clear #
 # Allows you to clear the interpreter.
